@@ -6,8 +6,8 @@ html   := $(patsubst src/%, out/%, $(patsubst %.haml,%.html,$(wildcard $(haml)))
 css    := $(patsubst src/%, out/%, $(patsubst %.sass,%.css,$(wildcard $(sass))))
 
 compile: $(html) $(css)
-	@rsync -qa src/js out/
-	@rsync -qa src/*html out/
+	@cp -vr src/js out/
+	@cp -v src/*html out/
 
 out/%.css: src/%.sass
 	@echo '    sass  $<'
