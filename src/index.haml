@@ -1,0 +1,66 @@
+!!! 5
+%html
+  %head
+    %meta(charset="UTF-8")
+    %link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css")
+    %meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    %title Loop Habit Tracker
+    %link(rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css")
+    %link(rel="stylesheet" type="text/css" href="index.css")
+
+  %body
+    .navbar.navbar-expand-md.navbar-light.bg-light
+      %a.navbar-brand(href="#")
+        %b Loop
+        Habit Tracker
+      %button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation")
+        %span.navbar-toggler-icon
+      #navbar.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+          %li.nav-item
+            %a.nav-link(href="#") Features
+          %li.nav-item
+            %a.nav-link(href="#") Screenshots
+          %li.nav-item
+            %a.nav-link(href="#") FAQ
+          %li.nav-item
+            %a.nav-link(href="#") Privacy
+          %li.nav-item
+            %a.nav-link(href="#") Source Code
+
+    .jumbotron.jumbotron-fluid
+      .site-wrapper
+        .container
+          .row.vertical-align
+            .col-md
+              %h1.display-4
+                Get your life on track
+              %p.lead
+                With daily reminders, beautiful charts and insightful statistics,
+                Loop Habit Tracker&trade; helps you create and maintain great habits to improve your
+                life.
+                
+              .store-badges
+                %a(href="#")
+                  %img(src="images/google-play.png")
+                %a(href="#")
+                  %img(src="images/f-droid.png")
+            .col-md
+              .s2
+                %img.screenshot(src="screenshots/uhabits1.png")
+              .s1
+                %img.screenshot(src="screenshots/uhabits4.png")
+
+    .site-wrapper
+      .section
+        %h1
+          Features
+        %p
+          Magni et doloremque porro id vero dignissimos suscipit nihil.
+          Neque optio nulla voluptatem repellendus ea laboriosam. Veniam
+          qui voluptatum non repudiandae similique. Nulla aut asperiores
+          et eos.
+
+
+    %script(type="text/javascript" src="lib/js/jquery.min.js")
+    %script(type="text/javascript" src="lib/js/bootstrap.bundle.min.js")

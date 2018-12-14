@@ -1,20 +1,19 @@
-md     := src/*.md 
 haml   := src/*.haml
 sass   := src/*.sass
 
 html   := $(patsubst src/%, out/%, $(patsubst %.haml,%.html,$(wildcard $(haml))))
 css    := $(patsubst src/%, out/%, $(patsubst %.sass,%.css,$(wildcard $(sass))))
+src    := $(wildcard src/**)
 
 compile: $(html) $(css)
-	@cp -vr src/js out/
-	@cp -v src/*html out/
+	@rsync -rupE assets/ out/
 
-out/%.css: src/%.sass
+out/%.css: src/%.sass $(src)
 	@echo '    sass  $<'
 	@mkdir -p `dirname $@`
 	@sass $< $@
 
-out/%.html: src/%.haml $(md)
+out/%.html: src/%.haml $(src)
 	@echo '    haml  $<'
 	@mkdir -p `dirname $@`
 	@haml -E UTF-8 $< $@
