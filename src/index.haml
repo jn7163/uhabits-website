@@ -39,7 +39,7 @@
                 With daily reminders, beautiful charts and insightful statistics,
                 Loop Habit Tracker&trade; helps you create and maintain great habits to improve your
                 life.
-                
+
               .store-badges
                 %a(href="#")
                   %img(src="images/google-play.png")
@@ -53,13 +53,53 @@
 
     .site-wrapper
       .section
-        %h1
-          Features
-        %p
-          Magni et doloremque porro id vero dignissimos suscipit nihil.
-          Neque optio nulla voluptatem repellendus ea laboriosam. Veniam
-          qui voluptatum non repudiandae similique. Nulla aut asperiores
-          et eos.
+        .feature-header
+          %h1
+            Features
+          %p
+            Magni et doloremque porro id vero dignissimos suscipit nihil.
+            Neque optio nulla voluptatem repellendus ea laboriosam. Veniam
+            qui voluptatum non repudiandae similique. Nulla aut asperiores
+            et eos.
+        .container
+          .row
+            .col-md
+              .feature-box
+                %img.screenshot(src="feature-banners/score.png")
+                .inner-frame
+                  %h1 Habit Score
+                  In addition to showing your current streak, Loop has an advanced
+                  formula for calculating the strength of your habits. Every
+                  repetition makes your habit stronger. One missed day will
+                  not destroy your entire progress.
+            .col-md
+              .feature-box
+                %img.screenshot(src="feature-banners/charts.png")
+                .inner-frame
+                  %h1 Graphs and Statistics
+                  Clearly see how your habits improved over time with beautiful
+                  and detailed charts. Scroll back to see the complete history
+                  of your habits.
+            .col-md
+              .feature-box
+                %img.screenshot(src="feature-banners/night-mode.png")
+                .inner-frame
+                  %h1 Flexible schedules
+                  Supports both daily habits and habits with more complex schedules, such as 3 times every week; one time every other week; or every other day.
+          -# .row
+          -#   .col-md
+          -#     .feature-box
+          -#       %h1 Daily Reminders
+          -#       Create an individual reminder for each habit, at a chosen hour of the day. Easily check, dismiss or snooze your habit directly from the notification, without opening the app.
+          -#   .col-md
+          -#     .feature-box
+          -#       %h1 Optimized for smartwatches
+          -#       Reminders can be checked or dismissed directly from your Android Wear watch or Pebble.
+          -#   .col-md
+          -#     .feature-box
+          -#       %h1 Completely ad-free and open source
+          -#       There are absolutely no advertisements, annoying notifications or intrusive permissions in this app, and there will never be. The complete source code is available under the GPLv3.
+
 
 
     %script(type="text/javascript" src="lib/js/jquery.min.js")

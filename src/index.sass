@@ -1,5 +1,6 @@
 body
   font-family: 'Open Sans', sans-serif
+  padding-bottom: 5rem
 
 a, a:hover
   text-decoration: none
@@ -14,18 +15,15 @@ a, a:hover
   background-color: white !important
 
 .jumbotron
-  background: linear-gradient(rgba(216,27,96,0.1),rgba(216,27,96,0.9)), url("images/hero-background-filter.jpg")
+  background: linear-gradient(rgba(216,27,96,0.8),rgba(216,27,96,0.5)), url("images/hero-background-filter.jpg")
   box-shadow: rgba(0,0,0,0.5) 0px 0px 20px
-
   h1
     max-width: 25rem
     font-weight: bold
     color: white
-
   p
     max-width: 40rem
     color: white
-
   .screenshot
     box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px
     padding: 0px 0px 0px 0px
@@ -33,7 +31,6 @@ a, a:hover
     border: 0
     background-color: white
     max-width: 300px
-
   .store-badges
     margin: 2rem 1rem
     img
@@ -41,15 +38,34 @@ a, a:hover
       height: 75px
     img:hover
       opacity: 1.0
+  .s1
+    padding-bottom: 50px
+    padding-left: 50px
+  .s2
+    position: absolute
+    top: 50px
+    left: 175px
 
-.s1
-  padding-bottom: 50px
-  padding-left: 50px
+.feature-box
+  margin: 1rem 0rem
+  border-radius: 15px
+  box-shadow: rgba(0,0,0,0.1) 5px 5px 30px
+  font-size: 90%
+  .inner-frame
+    padding: 1rem 2rem
+  h1
+    color: rgb(216,27,96)
+    font-size: 100%
+    font-weight: bold
+  img
+    border-radius: 15px 15px 0 0
+    width: 100%
 
-.s2
-  position: absolute
-  top: 50px
-  left: 175px
+
+.feature-header
+  text-align: center
+  max-width: 800px
+  margin: 4rem auto
 
 
 .align-right
